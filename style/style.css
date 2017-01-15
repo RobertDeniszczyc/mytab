@@ -1,0 +1,56 @@
+/* Config files */
+/* Mixins */
+/* Layout alignment mixins */
+/* Colors */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+/* Base files */
+h1, .alpha {
+  font-size: 6em;
+  margin: 0; }
+
+h2, .beta {
+  font-size: 5em;
+  margin: 0; }
+
+h3, .charlie {
+  font-size: 3rem;
+  margin: 0; }
+
+h4, .delta {
+  font-size: 2rem;
+  margin: 0; }
+
+p, .zeta {
+  font-size: 1.2rem;
+  margin: 0; }
+
+.hero-heading {
+  font-family: "Roboto", sans-serif, sans-serif;
+  font-weight: 100; }
+
+@media (max-width: 960px) {
+  h1, .alpha {
+    font-size: 2rem; }
+
+  h2, .beta {
+    font-size: 2rem; }
+
+  h3, .charlie {
+    font-size: 2rem; }
+
+  h4, .delta {
+    font-size: 2rem; }
+
+  p, .zeta {
+    font-size: 1rem; } }
+/* colors */
+.white {
+  color: #FFF; }
+
+/* Layout components */
+/* Trumps */
+.textcenter {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

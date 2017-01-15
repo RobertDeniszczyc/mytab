@@ -1,0 +1,12 @@
+/* Config files */
+@import "config/_mixins.scss";
+@import "config/_vars.scss";
+
+/* Base files */
+@import "base/_typography.scss";
+
+/* Layout components */
+@import "layout/_containers";
+
+/* Trumps */
+@import "layout/_trumps";
