@@ -49,8 +49,7 @@ function walk(links) {
             if (column.hasOwnProperty(link)) {
                 var link = column[link];
                 var linkHTML = '<a href=\"' + link.url + '\"> ' +
-                '<div class=\"link clearfix\" id=\"' + link + '\"> ' +
-                '<div class=\"link-colour\" style=\"background-color:' + link.colour + '\">&nbsp;</div> ' +
+                '<div class=\"link clearfix\" id=\"' + link + '\" style=\"border-left:' + link.colour + ' solid 4px\"> ' +
                 '<div class=\"link-info\"><p class=\"link-title\">' + link.title + '</p> ' +
                 '<p class=\"link-url\">' + link.url + '</p></div></div></a>'
                 thisColumn.innerHTML += linkHTML;
