@@ -24,25 +24,18 @@
 }
 
 .link {
+	max-width: 100%;
 	margin-bottom: 12px;
 	font-family: $text-body;
 	color: $midrange;
+	padding-left: 12px;
 
 	&:hover {
 		background-color: $light;
-		.link-colour {
-			width: 20px;
-			transition: width 0.2s ease-in-out;
-		}
+		border-left-width: 12px !important;
+		padding-left: 4px;
+		transition: all 0.2s ease-in-out;
 	}
-}
-
-.link-colour {
-    width: 5px;
-    min-height: 56px;
-    display: inline-block;
-    float: left;
-    margin-right: 10px;
 }
 
 .link-info {
