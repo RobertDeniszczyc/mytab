@@ -17,13 +17,19 @@ h4, .delta {
     margin: 0;
 }
 
+h5, .echo {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
 p, .zeta {
     font-size: 1.2rem;
     margin: 0;
 }
 
-.hero-heading {
-    font-family: $hero-heading, sans-serif;
+.date-time-container,
+.column-heading-container {
+    font-family: $text-heading, sans-serif;
     font-weight: 100;
 }
 
@@ -46,17 +52,4 @@ p, .zeta {
     p, .zeta {
         font-size: 1rem;
     }
-}
-
-
-
-
-
-
-
-
-
-/* colors */
-.white {
-    color: #FFF;
 }

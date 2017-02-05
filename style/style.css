@@ -1,9 +1,60 @@
 /* Config files */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
 /* Mixins */
 /* Layout alignment mixins */
 /* Colors */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100");
 /* Base files */
 h1, .alpha {
   font-size: 6em;
@@ -21,11 +72,16 @@ h4, .delta {
   font-size: 2rem;
   margin: 0; }
 
+h5, .echo {
+  font-size: 1.6rem;
+  margin: 0; }
+
 p, .zeta {
   font-size: 1.2rem;
   margin: 0; }
 
-.hero-heading {
+.date-time-container,
+.column-heading-container {
   font-family: "Roboto", sans-serif, sans-serif;
   font-weight: 100; }
 
@@ -44,13 +100,62 @@ p, .zeta {
 
   p, .zeta {
     font-size: 1rem; } }
-/* colors */
-.white {
-  color: #FFF; }
-
 /* Layout components */
+.column-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  -webkit-flex-flow: row wrap; }
+
+.link-container {
+  min-height: 40px;
+  flex-grow: 1;
+  padding-bottom: 60px;
+  border-left: 1px solid #eee; }
+  .link-container:not(.date-time-container) {
+    flex-grow: 2; }
+
+.column-heading {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding: 12px; }
+
+.link {
+  max-width: 100%;
+  margin-bottom: 12px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #A6A6A6;
+  padding-left: 12px; }
+  .link:hover {
+    background-color: #ECEBF0;
+    border-left-width: 12px !important;
+    padding-left: 4px;
+    transition: all 0.2s ease-in-out; }
+
+.link-info {
+  display: inline-block; }
+
+.link-title,
+.link-url {
+  margin: 6px 0px; }
+
+.link-title {
+  color: #333; }
+
+.link-url {
+  color: #A6A6A6; }
+
+.date-time-container {
+  padding: 24px; }
+
 /* Trumps */
 .textcenter {
   text-align: center; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /*# sourceMappingURL=style.css.map */
