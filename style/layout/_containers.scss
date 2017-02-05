@@ -8,6 +8,60 @@
 
 .link-container {
     min-height: 40px;
-    width: 25%;
     flex-grow: 1;
+    padding-bottom: 60px;
+    border-left: 1px solid #eee;
+
+    &:not(.date-time-container) {
+    	flex-grow: 2;
+    }
+}
+
+.column-heading {
+	margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+}
+
+.link {
+	margin-bottom: 12px;
+	font-family: $text-body;
+	color: $midrange;
+
+	&:hover {
+		background-color: $light;
+		.link-colour {
+			width: 20px;
+			transition: width 0.2s ease-in-out;
+		}
+	}
+}
+
+.link-colour {
+    width: 5px;
+    min-height: 56px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.link-info {
+	display: inline-block;
+}
+
+.link-title,
+.link-url {
+	margin: 6px 0px;
+}
+
+.link-title {
+	color: $dark;
+}
+
+.link-url {
+	color: $midrange;
+}
+
+.date-time-container {
+	padding: 24px;
 }

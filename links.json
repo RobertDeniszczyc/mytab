@@ -2,31 +2,31 @@
 	"column1heading": {
 		"link1": {
 			"title": "Test link one",
-			"url": "www.test.com",
+			"url": "http://www.test.com",
 			"colour": "tomato"
 		}
 	},
 	"column2heading": {
 		"link1": {
 			"title": "Test link one",
-			"url": "www.test.com",
+			"url": "http://www.test.com",
 			"colour": "green"
 		},
 		"link2": {
 			"title": "Test link two",
-			"url": "www.test.com",
+			"url": "http://www.test.com",
 			"colour": "blue"
 		}
 	},
 	"column3heading": {
 		"link1": {
 			"title": "Test link one",
-			"url": "www.test.com",
+			"url": "http://www.test.com",
 			"colour": "green"
 		},
 		"link2": {
 			"title": "Test link two",
-			"url": "www.test.com",
+			"url": "http://www.test.com",
 			"colour": "blue"
 		}
 	}

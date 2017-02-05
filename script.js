@@ -41,16 +41,18 @@ function walk(links) {
     for (var key in links) {
         if (links.hasOwnProperty(key)) {
           var column = links[key];
-          var columnHTML = '<div class=\"link-container\" id=\"column_' + key + '\"><h1 class=\"column-heading hero-heading charlie\">' + key + '</h1></div>'
+          var columnHTML = '<div class=\"link-container\" id=\"column_' + key + '\"><div class=\"column-heading-container clearfix\"><h1 class=\"column-heading echo\">' + key + '</h1></div></div>'
           columnsContainer.innerHTML += columnHTML;
 
           var thisColumn = document.getElementById('column_' + key);
           for (var link in column) {
             if (column.hasOwnProperty(link)) {
                 var link = column[link];
-                var linkHTML = '<div class=\"link-container\" id=\"' + link + '\"><span class=\"link-color\" style=\"background-color:' + link.colour + '\"></span> ' +
-                '<p class=\"link-title\">' + link.title + '</p> ' +
-                '<p class=\"link-title\">' + link.url + '</p></div>'
+                var linkHTML = '<a href=\"' + link.url + '\"> ' +
+                '<div class=\"link clearfix\" id=\"' + link + '\"> ' +
+                '<div class=\"link-colour\" style=\"background-color:' + link.colour + '\">&nbsp;</div> ' +
+                '<div class=\"link-info\"><p class=\"link-title\">' + link.title + '</p> ' +
+                '<p class=\"link-url\">' + link.url + '</p></div></div></a>'
                 thisColumn.innerHTML += linkHTML;
             }
           }

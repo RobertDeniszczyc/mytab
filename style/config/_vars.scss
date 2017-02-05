@@ -1,6 +1,11 @@
 /* Colors */
 $dark: #333;
+$midrange: #A6A6A6;
+$light: #ECEBF0;
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
-$hero-heading: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+$text-heading: 'Roboto', sans-serif;
+$text-body: 'Open Sans Condensed', sans-serif;
