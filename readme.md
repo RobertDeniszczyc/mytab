@@ -2,7 +2,6 @@ MyTab
 ===========
 A Chrome extension to replace the default new tab screen displaying user defined links for easy and quick access.
 
-<br />
 
 ##Key features
 ------------
@@ -44,8 +43,6 @@ The URL must be the complete URL, colours can be supplied in any valid format ac
 	}
 }
 ```
-
-<br />
 
 ##Issues
 -------------

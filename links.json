@@ -1,23 +1,58 @@
 {
-	"column1heading": {
-		"link1": {
-			"title": "Test link one",
-			"url": "http://www.test.com",
-			"colour": "tomato"
+	"Shopping": {
+		"Amazon": {
+			"title": "Amazon",
+			"url": "https://www.amazon.co.uk",
+			"colour": "#ff9900"
+		},
+		"Sainsburys": {
+			"title": "Sainsburys",
+			"url": "https://www.sainsburys.co.uk/",
+			"colour": "#ec8a00"
+		},
+		"eBay": {
+			"title": "eBay",
+			"url": "http://www.ebay.co.uk/",
+			"colour": "#e53238"
 		}
 	},
-	"column2heading": {
-		"link1": {
-			"title": "Test link one",
-			"url": "http://www.test.com",
-			"colour": "#FFAAAA"
+	"News": {
+		"hackernews": {
+			"title": "Hacker News",
+			"url": "https://news.ycombinator.com/",
+			"colour": "#ff6600"
+		},
+		"designernews": {
+			"title": "Designer News",
+			"url": "https://www.designernews.co/",
+			"colour": "#2d72d9"
+		},
+		"Reuters": {
+			"title": "Reuters",
+			"url": "http://uk.reuters.com/",
+			"colour": "#ff8000"
+		},
+		"Engadget": {
+			"title": "Engadget",
+			"url": "https://www.engadget.com/uk/",
+			"colour": "#40b3ff"
 		}
 	},
-	"column3heading": {
-		"link1": {
-			"title": "Test link one",
-			"url": "http://www.test.com",
-			"colour": "rgb(23, 56, 90)"
+	"Social": {
+		"Facebook": {
+			"title": "Facebook",
+			"url": "https://www.facebook.com/",
+			"colour": "#3b5998"
+		},
+		"Twitter": {
+			"title": "Twitter",
+			"url": "https://twitter.com/",
+			"colour": "#1da1f2"
+		},
+		"Instagram": {
+			"title": "Instagram",
+			"url": "https://www.instagram.com/",
+			"colour": "#5851db"
 		}
 	}
 }
