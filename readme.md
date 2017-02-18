@@ -10,6 +10,12 @@ A Chrome extension to replace the default new tab screen displaying user defined
  * Give each link a unique colour tab to act as an easy visual cue
  * Name each column for easy categorisation of links
 
+##Installation
+---------------------
+1. Clone this repo.
+2. In Google Chrome, go to the Extensions page.
+3. Ensure you have Developer Mode active allowing you to load unpacked extensions.
+4. Select 'Load unpacked extension' on the Extensions page and load this repo.
 
 ##How to set up links        
 ---------------------
