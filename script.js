@@ -47,11 +47,21 @@ function walk(links) {
           var thisColumn = document.getElementById('column_' + key);
           for (var link in column) {
             if (column.hasOwnProperty(link)) {
-                var link = column[link];
-                var linkHTML = '<a href=\"' + link.url + '\"> ' +
-                '<div class=\"link clearfix\" id=\"' + link + '\" style=\"border-left:' + link.colour + ' solid 4px\"> ' +
+                var link = column[link],
+                    linkId = key + link.title.replace(/\s/g,'');
+                var linkHTML = '<a href=\"' + link.url + '\">' +
+                '<div class=\"link clearfix\" id=\"' + linkId + '\"> ' +
                 '<div class=\"link-info\"><p class=\"link-title\">' + link.title + '</p> ' +
-                '<p class=\"link-url\">' + link.url + '</p></div></div></a>'
+                '<p class=\"link-url\">' + link.url + '</p></div></div></a>' +
+
+                /* We need to set the color of the before element so we're using scoped CSS 
+                    despite support almost being non-existant for scoped, browsers will allow
+                    us to include style tags outside of the head.*/
+                    
+                '<style type=\"text/css\" scoped>' +
+                '#' + linkId + ':before {' +
+                'background-color:' + link.colour + '; }' +
+                '</style>';
                 thisColumn.innerHTML += linkHTML;
             }
           }
